@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>2048 Game</h1>
+        <div class="score"> Press one of RLDU to begin. </div>
+        <div class="game-board" id="game-board">
+            <!-- The game grid will be dynamically generated here -->
+        </div>
+        <button id="new-game-button">New Game</button>
+    </div>
+
+    <div class="grid-container">
+        <!-- Create cells with numbers using div elements -->
+        <div class="grid-cell" id = "1"></div>
+        <div class="grid-cell" id = "2"></div>
+        <div class="grid-cell" id = "3"></div>
+        <div class="grid-cell" id = "4"></div>
+        <div class="grid-cell" id = "5"></div>
+        <div class="grid-cell" id = "6"></div>
+        <div class="grid-cell" id = "7"></div>
+        <div class="grid-cell" id = "8"></div>
+        <div class="grid-cell" id = "9"></div>
+        <div class="grid-cell" id = "10"></div>
+        <div class="grid-cell" id = "11"></div>
+        <div class="grid-cell" id = "12"></div>
+        <div class="grid-cell" id = "13"></div>
+        <div class="grid-cell" id = "14"></div>
+        <div class="grid-cell" id = "15"></div>
+        <div class="grid-cell" id = "16"></div>
+    </div>
+
+    <script>
+        function updateVals() {
+            for (let i = 1; i <= 16; i++) {
+                let c2 = "" + i;
+                let c1 = document.getElementById(c2);
+                let i2 = i -1;
+                let val1 = parseInt(i2);
+                val1 = Math.floor(i2/4)
+                c1.textContent = board[val1][i2%4];
+            }
+        }   
+        // Display the 'myArray' array as a string on the webpage
+    </script>
+
+
+    <script>
+        // Event listener for keydown event
+        document.addEventListener("keydown", function(event) {
+            switch(event.key) {
+                case "ArrowLeft":
+                    move("left");    
+                    updateVals();
+                    break;
+                case "ArrowRight":
+                    move("right");
+                    updateVals();
+                    break;
+                case "ArrowUp":
+                    move("up");
+                    updateVals();
+                    break;
+                case "ArrowDown":
+                    move("right");
+                    updateVals();
+                    break;
+            }
+        });
+    </script>
+
+    
+    <script src="2048.js"></script> <!-- Link to your JavaScript file for game logic -->
+
+</body>
+</html>
+
+</body>
+</html>
+
