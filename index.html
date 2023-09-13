@@ -5,18 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2048 Collatz</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
         <h1>2048 but Collatz</h1>
-        <div class="score"> Press one of RLDU to begin. </div>
-        <p> Win by reaching 1 </p>
-        <p> The Collatz Conjecture states that a sequence starting with any number following two arithmetic operations: if odd, 3n + 1, if even, n/2, will always end at 1. </p>
+        <div class="score"><h2> Press one of RLDU to begin. </h2></div>
+        <h2> Win by reaching 1 </h2>
+        <h2> The Collatz Conjecture states that a sequence starting with any number ,following two arithmetic operations: if odd, 3n + 1, if even, n/2, will always end at 1. </h2>
         <div class="game-board" id="game-board">
             <!-- The game grid will be dynamically generated here -->
         </div>
-        <button id="new-game-button">New Game</button>
+        
     </div>
+
+<br>
+<br>
 
     <div class="grid-container">
         <!-- Create cells with numbers using div elements -->
@@ -87,9 +103,12 @@
     
     <script src="2048.js"></script> <!-- Link to your JavaScript file for game logic -->
 
-</body>
-</html>
+	<br>
+	<br>
+	<button id="new-game-button">New Game</button>
 
 </body>
 </html>
 
+</body>
+</html>

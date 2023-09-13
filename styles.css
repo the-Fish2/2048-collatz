@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Archivo', sans-serif;
     text-align: center;
 }
 
@@ -10,11 +10,18 @@ body {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
+	font-family: 'Archivo', sans-serif;
     color: #333;
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 13px;
+	font-family: 'Public Sans', sans-serif;
 }
 
 .score {
@@ -42,23 +49,25 @@ h1 {
 }
 
 button {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #8f7a66;
-    color: #ffffff;
-    border: none;
+	font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    padding: 20px 30px;
+    background-color: #bababa;
+    color: #000000;
+    border: 3px;
+	border-color: #000000;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #6f5b4c;
+    background-color: #8a8a8a;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 110px); /* 4 columns */
-    gap: 10px; /* Adjust the gap between cells as needed */
+    gap: 8px; /* Adjust the gap between cells as needed */
     justify-content: center;
 }
 
@@ -67,7 +76,7 @@ button:hover {
     width: 100px; /* Adjust cell width as needed */
     height: 100px; /* Adjust cell height as needed */
     background-color: #ccc; /* Cell background color */
-    border: 1px solid #000; /* Cell border */
+    border: 3px solid #000; /* Cell border */
     text-align: center; /* Center text within the cell */
     line-height: 100px; /* Vertical alignment */
     font-size: 24px; /* Font size */
