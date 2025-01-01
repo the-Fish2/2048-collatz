@@ -8,4 +8,4 @@ https://en.wikipedia.org/wiki/Collatz_conjecture
 Reach 1
 Normal rules of 2048 apply
 
-A similar article! https://seattleinfinity.org/circle/dec23/the-collatz-conjecture/
+A somewhat related article! https://seattleinfinity.org/circle/dec23/the-collatz-conjecture/
